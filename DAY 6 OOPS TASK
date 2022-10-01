@@ -1,0 +1,72 @@
+//q1 https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+class shortfilm {
+    constructor( moviename,director,rating){
+        this.movienmae = moviename;
+        this.director = director;
+        this.rating = rating;
+    }
+}
+
+const Topfilm = new shortfilm ( "Niraimatha nilave","RaviRenu","8star");
+console.log(Topfilm);
+
+Q2 https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+
+class circle {
+    constructor (radius,color){
+        this.radius = radius;
+        this.color = color;
+
+    }
+}
+const result = new circle (1, "blue");
+console.log(result);
+
+Q3 Write a “person” class to hold all the details.
+
+class person {
+
+    constructor (name,age, gender,state,country){
+
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.state = state;
+        this.country = country;
+    }
+}
+
+const details = new person ("abdul","24", "male","Tamilnadu","India");
+
+console.log(details);
+
+OUTPUT:
+
+person {
+  name: 'abdul',
+  age: '24',
+  gender: 'male',
+  state: 'Tamilnadu',
+  country: 'India' }
+Q4 write a class to calculate the uber price.
+
+class uber {
+
+    constructor (km, price){
+
+        this.km = km;
+        this.price = price;
+    }
+
+ get amount(){
+    return this.calcAmount();
+}
+
+calcAmount (){
+    return this.price * this.km;
+}
+}
+
+const result2 = new uber (5,10);
+console.log(result2.amount);
